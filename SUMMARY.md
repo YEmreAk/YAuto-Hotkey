@@ -1,7 +1,7 @@
-# Table of contents
+# 📋 Tüm İçerikler
 
 * [💫 AutoHotkey](README.md)
-* [👀 Neler değişti](CHANGELOG.md)
+* [👀 Neler değişti](https://github.com/YEmreAk/YAutoHotkey/blob/master/CHANGELOG.md)
 * [📋 Tüm İçerikler](SUMMARY.md)
 * [💖 Katkıda Bulunma Rehberi](https://lib.yemreak.com/contributing)
 * [🔰 Giriş](giris.md)
