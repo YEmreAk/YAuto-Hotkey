@@ -1,12 +1,11 @@
-# Table of contents
+# 📋 Tüm İçerikler
 
-* [💫 AutoHotkey](README.md)
-* [👀 Neler değişti](changelog.md)
+* [💫 AutoHotkey](./)
+* [👀 Neler değişti](https://github.com/YEmreAk/YAuto-Hotkey/tree/05cee97db307530c850c33c50b65b7f9204d4ec5/CHANGELOG.md)
 * [📋 Tüm İçerikler](summary.md)
 * [💖 Katkıda Bulunma Rehberi](https://lib.yemreak.com/contributing)
 * [🔰 Giriş](giris.md)
 * [🧱 Temel İşlemler](temel-islemler.md)
-* [🚄 Diziler](diziler.md)
 * [🔡 String İşlemleri](string-islemleri.md)
 * [💞 Kısayollar](kisayollar.md)
 * [📂 Dosya İşlemleri](dosya-islemleri.md)
