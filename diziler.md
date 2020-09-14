@@ -27,7 +27,7 @@ For index, value in array
 ## 🔍 Eleman Varlığı Kontrolü
 
 * 😅 AHK içerisinde diziler için hazır gelen bir varlık kontrolü yok
-* 🤹 Dışarıdan harici bir fonksiyon oluşturmamız gerekmekte
+* 🤹 Yeni bir `HasVal` fonksiyonu oluşturmamız gerekmekte
 
 ```haskell
 HasVal(haystack, needle) {
@@ -39,7 +39,6 @@ HasVal(haystack, needle) {
     return 0
 }
 
-; ==========================================================
 
 arr := ["a", "b", "", "d"]
 MsgBox % HasVal(arr, "a") "`n"           ; -> 1
