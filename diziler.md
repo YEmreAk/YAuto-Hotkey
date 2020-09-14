@@ -24,6 +24,53 @@ For index, value in array
     MsgBox % "Item " index " is '" value "'"
 ```
 
+## 🔍 Eleman Varlığı Kontrolü
+
+* 😅 AHK içerisinde diziler için hazır gelen bir varlık kontrolü yok
+* 🤹 Dışarıdan harici bir fonksiyon oluşturmamız gerekmekte
+
+```haskell
+HasVal(haystack, needle) {
+    for index, value in haystack
+        if (value = needle)
+            return index
+    if !(IsObject(haystack))
+        throw Exception("Bad haystack!", -1, haystack)
+    return 0
+}
+
+; ==========================================================
+
+arr := ["a", "b", "", "d"]
+MsgBox % HasVal(arr, "a") "`n"           ; -> 1
+       . HasVal(arr, "c") "`n"           ; -> 0
+       . HasVal(arr, "d")                ; -> 4
+
+
+arr := {keyA: "A", keyB: "B"}
+MsgBox % HasVal(arr, "B") "`n"           ; -> keyB
+       . HasVal(arr, "C")                ; -> 0
+
+
+arr := {keyA: "A", 1: 0, keyC: "C"}
+MsgBox % HasVal(arr, 0)   "`n"           ; -> 1
+       . HasVal(arr, "C") "`n"           ; -> keyC
+
+
+str := "A"
+MsgBox % HasVal(str, "A")                ; -> fails -1
+
+
+; İçerisinde yoksa ekleme
+If !HasVal(IDlist, myID) {
+    IDlist.Push(myID)
+}
+```
+
+{% hint style="info" %}
+‍🧙‍♂ Detaylı bilgi için [👨‍💻 AHK\_Scripts](https://github.com/jNizM/AHK_Scripts/blob/master/src/arrays/HasVal.ahk) alanına bakabilirsin.
+{% endhint %}
+
 ## 🧐 Dizi Kontrolü
 
 * Elemanın dizi olup olmadığını uzunluk özelliği ile kontrol ederiz
